@@ -1,0 +1,29 @@
+{
+  "name": "black-mirror",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "concurrently \"node server.js\" \"npm run dev --prefix frontend\" \"python3 sectors/sector1.py\" \"node sectors/sector2.js\" \"node sectors/sector3.js\" \"python3 sectors/sector4.py\" \"node sectors/sector5.js\""
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanime007/black-mirror.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kanime007/black-mirror/issues"
+  },
+  "homepage": "https://github.com/Kanime007/black-mirror#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1",
+    "ws": "^8.20.0"
+  }
+}
